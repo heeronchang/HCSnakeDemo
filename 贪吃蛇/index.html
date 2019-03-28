@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>贪吃蛇</title>
+  <link href="./style.css" rel="stylesheet" type="text/css"/>
+  <script src="./food.js" charset="utf-8"></script>
+  <script src="./snake.js" charset="utf-8"></script>
+  <script src="./game.js" charset="utf-8"></script>
+</head>
+<body>
+  <div class="map" id="map"></div>
+  <script type="text/javascript">
+  const map = document.getElementById('map')
+    // let fd = new Food();
+    // fd.init(map);
+
+    // let snake = new Snake();
+    // snake.init(map);
+    // setInterval(function(){
+    //   snake.move(fd, map);
+    //   snake.init(map);
+    // }, 150);
+    const game = new Game(map);
+    game.init();
+  </script>
+</body>
+</html>
